@@ -1,87 +1,19 @@
-# Welcome to React Router!
+# Resumind - AI Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Resumind adalah platform berbasis web yang dirancang untuk membantu pelamar kerja mengoptimalkan CV mereka. Dengan memanfaatkan teknologi kecerdasan buatan, Resumind mampu membedah isi resume, memberikan skor kelayakan, dan memberikan saran spesifik agar resume tersebut lebih menarik di mata perekrut atau sistem ATS (Applicant Tracking System).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Proyek ini dibangun menggunakan React JS dan Vite untuk performa yang cepat, serta menggunakan Puter.js untuk menangani pemrosesan AI secara langsung di sisi klien.
 
-## Features
+## Tentang Resumind
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+Resumind hadir sebagai solusi bagi para jobseeker yang sering merasa ragu apakah resume mereka sudah cukup kuat atau belum. Cukup dengan mengunggah teks resume, AI akan bekerja untuk:
+- Memberikan penilaian (scoring) berdasarkan struktur dan konten.
+- Menganalisis kata kunci yang relevan.
+- Memberikan rekomendasi perbaikan yang praktis dan mudah dipahami.
 
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+## Library/Package
+Aplikasi ini mengandalkan beberapa teknologi utama:
+- React JS: Framework frontend untuk membangun antarmuka yang dinamis.
+- Vite: Build tool yang memastikan proses pengembangan dan loading aplikasi sangat cepat.
+- Puter.js: Library cloud computing dan AI yang memungkinkan aplikasi menjalankan model bahasa (LLM) tanpa perlu setup backend yang rumit.
+- Tailwind CSS: Untuk desain antarmuka yang bersih dan responsif.
