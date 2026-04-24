@@ -54,6 +54,19 @@ const Resume = () => {
 
   return (
     <main className="pt-0">
+      {!feedback && (
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-white">
+          <img
+            src="/images/resume-scan-2.gif"
+            alt="Analyzing Resume..."
+            className="w-full max-w-md"
+          />
+          <p className="mt-4 text-2xl font-semibold text-gray-700">
+            Analyzing your resume...
+          </p>
+        </div>
+      )}
+
       <nav className="resume-nav">
         <Link to="/" className="back-button">
           <img src="/icons/back.svg" alt="back" className="h-2.5 w-2.5" />
@@ -81,16 +94,12 @@ const Resume = () => {
           <h2 className="text-4xl text-black! font-bold">Resume Review</h2>
           {feedback ? (
             <div className="flex flex-col gap-8 animate-in fade-in duration-1000">
-              {/* <Summary feedback={feedback} />
-              <Ats
-                score={feedback.ATS.score || 0}
-                suggestions={feedback.ATS.tips || []}
-              />
-              <Details feedback={feedback} /> */}
+              <Summary feedback={feedback} />
+              <Ats feedback={feedback} />
+              <Details />
             </div>
-          ) : (
-            <img src="/images/resume-scan-2.gif" alt="" className="w-full" />
-          )}
+          ) : // This space is intentionally left blank while the full-screen loader is active.
+          null}
         </section>
       </div>
     </main>
