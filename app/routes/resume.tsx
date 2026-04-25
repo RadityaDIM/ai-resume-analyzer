@@ -96,7 +96,7 @@ const Resume = () => {
             <div className="flex flex-col gap-8 animate-in fade-in duration-1000">
               <Summary feedback={feedback} />
               <Ats feedback={feedback} />
-              <Details />
+              <Details feedback={feedback} />
             </div>
           ) : // This space is intentionally left blank while the full-screen loader is active.
           null}
